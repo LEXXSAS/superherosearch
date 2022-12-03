@@ -416,6 +416,52 @@ img {
     }
 }
 
+@media (max-width: 320px) {
+    .app {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    .app-header {
+        margin-top: 1rem;
+    }
+    .app-header-search {
+        padding: 1rem 1rem;
+    }
+    .app-header-search .form-control {
+        min-width: auto;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .app-body-content-list .name {
+        font-size: 3rem;
+    }
+    .appearance li {
+        font-size: 1.2rem;
+    }
+    .connections li {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    .biography li {
+        font-size: 1.4rem;
+    }
+    .biography li span {
+        font-size: 1.6rem;
+    }
+    .powerstats li {
+        font-size: 1.4rem;
+    }
+    .powerstats li div span {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 7px;
+        padding: 0 1.2rem;
+        margin: 0 1.2rem;
+        opacity: 0.6;
+        font-size: 1rem;
+    }
+}
+
 .show-tab {
     display: block;
 }
