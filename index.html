@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Superhero search</title>
+</head>
+<body>
+
+       <div class="main-wrapper">
+           <div class="app">
+              <!-- header -->
+              <div class="app-header">
+                   <h2 class="app-header-title">Super<span>Hero.</span></h2>
+                   <form class="app-header-search">
+                       <input type="text" class="form-control" placeholder="Найди своего супергероя ..." name="search">
+                       <button type="submit" class="search-btn">
+                           <i class="fas fa-search"></i>
+                       </button>
+                       <div class="search-list" id="search-list">
+<!--
+                          <div class="search-list-item">
+                           <img src="/training-4/img/Catwoman-DC-Comics-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Jeff-Dekal-7469325.png" alt="">
+                           <p>Catwoman</p>                              
+                          </div>
+-->
+                       </div>
+                   </form>
+               </div>
+               
+               
+           
+           <div class="app-body">
+               <div class="app-body-content">
+                   <div class="app-body-content-thumbnail">
+                       <img src="/training-4/img/spider-gwen-thumb.jpg" alt="">
+                   </div>
+                   
+                   <div class="app-body-content-list">
+                       <div class="name">Spider-Gwen</div>
+                       
+                       <div class="app-body-tabs-head">
+                           <button type="button" class="tab-head-single" data-id="1">                <span>способности</span></button>                   <button type="button" class="tab-head-single" data-id="2">                <span>биография</span></button>                   <button type="button" class="tab-head-single" data-id="3">                <span>внешний вид</span></button>                   <button type="button" class="tab-head-single" data-id="4">                <span>связи</span></button>
+                       </div>
+                       
+                       <div class="app-body-tabs-body">
+                           <ul class="tab-body-single powerstats">
+                               <li>
+                                   <div>
+                                       <i class="fa-solid fa-shield-halved"></i>
+                                       <span>интеллект</span>
+                                   </div>
+                                   <span>75</span>
+                               </li>
+                               <li>
+                                   <div>
+                                       <i class="fa-solid fa-shield-halved"></i>
+                                       <span>сила</span>
+                                   </div>
+                                   <span>55</span>
+                               </li>
+                               <li>
+                                   <div>
+                                       <i class="fa-solid fa-shield-halved"></i>
+                                       <span>скорость</span>
+                                   </div>
+                                   <span>63</span>
+                               </li> 
+                               <li>
+                                   <div>
+                                       <i class="fa-solid fa-shield-halved"></i>
+                                       <span>выносливость</span>
+                                   </div>
+                                   <span>70</span>
+                               </li>   
+                               <li>
+                                   <div>
+                                       <i class="fa-solid fa-shield-halved"></i>
+                                       <span>мощь</span>
+                                   </div>
+                                   <span>66</span>
+                               </li>
+                               <li>
+                                   <div>
+                                       <i class="fa-solid fa-shield-halved"></i>
+                                       <span>бой</span>
+                                   </div>
+                                   <span>70</span>
+                               </li>                                                      
+                           </ul>
+                           
+                           <ul class="tab-body-single biography">
+                               <li>
+                                   <span>полное имя</span>
+                                   <span>Gwen Stacy</span>
+                               </li>
+                               <li>
+                                   <span>alter-egos</span>
+                                   <span>no alter egos found</span>
+                               </li>
+                               <li>
+                                   <span>aliases</span>
+                                   <span>Spider-Woman</span>
+                               </li>
+                               <li>
+                                   <span>место рождения</span>
+                                   <span>-</span>
+                               </li>
+                               <li>
+                                   <span>первое упоминание</span>
+                                   <span>Edge of Spider-Verse #2</span>
+                               </li>                               
+                               <li>
+                                   <span>publisher</span>
+                                   <span>Marvel Comics</span>
+                               </li>                                                      
+                           </ul>
+                           
+                           <ul class="tab-body-single appearance">
+                               <li>
+                                   <span>
+                                       <i class="fas fa-star"></i>пол</span>
+                                       <span>Женский</span>
+                                   
+                               </li>
+                               <li>
+                                   <span>
+                                       <i class="fas fa-star"></i>раса</span>
+                                       <span>Человек</span>
+                                   
+                               </li>
+                               <li>
+                                   <span>
+                                       <i class="fas fa-star"></i>рост</span>
+                                       <span>165 см</span>
+                                   
+                               </li>
+                               <li>
+                                   <span>
+                                       <i class="fas fa-star"></i>вес</span>
+                                       <span>56 кг</span>
+                                   
+                               </li>
+                               <li>
+                                   <span>
+                                       <i class="fas fa-star"></i>цвет глаз</span>
+                                       <span>синий</span>
+                                   
+                               </li>
+                               <li>
+                                   <span>
+                                       <i class="fas fa-star"></i>цвет волос</span>
+                                       <span>светлый</span>
+                                   
+                               </li>                        
+                           </ul>
+                           
+                           <ul class="tab-body-single connections">
+                               <li>
+                                   <span>group--affiliation</span>
+                                   <span>Warriors of the Great Web; formerly Mary Janes, Spider-Army</span>
+                               </li>
+                               <li>
+                                   <span>relatives</span>
+                                   <span>George Stacy (father), Helen Stacy (mother, deceased)</span>
+                               </li>                               
+                           </ul>
+                       </div>
+                       
+                   </div>
+                   
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
