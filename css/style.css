@@ -357,7 +357,11 @@ img {
         max-width: 540px;
     }
     .app {
+/*
         margin: 1rem;
+        padding: 2rem;
+*/
+        margin: 0;
         padding: 2rem;
     }
     .app-body-content {
@@ -375,7 +379,7 @@ img {
         color: #fff;
     }
     .app-header-search .search-btn {
-        padding-left: 2rem;
+        padding-left: 5rem;
     }
     .app-body-tabs-body {
         margin-right: 3rem;
@@ -419,8 +423,12 @@ img {
 
 @media (max-width: 320px) {
     .app {
+/*
         margin: 0.5rem;
         padding: 1rem;
+*/
+        margin: 0;
+        padding: 2rem;
     }
     .app-header {
         margin-top: 1rem;
@@ -436,6 +444,9 @@ img {
     }
     .app-body-content-list .name {
         font-size: 3rem;
+    }
+    .app-header-search .search-btn {
+        padding-left: 5rem;
     }
     .appearance li {
         font-size: 1.2rem;
