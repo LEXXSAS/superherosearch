@@ -379,7 +379,7 @@ img {
         color: #fff;
     }
     .app-header-search .search-btn {
-        padding-left: 0rem;
+        padding-left: 5rem;
     }
     .app-body-tabs-body {
         margin-right: 3rem;
@@ -446,7 +446,7 @@ img {
         font-size: 3rem;
     }
     .app-header-search .search-btn {
-        padding-left: 0rem;
+        padding-left: 5rem;
     }
     .appearance li {
         font-size: 1.2rem;
