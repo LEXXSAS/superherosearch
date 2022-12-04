@@ -590,6 +590,7 @@ img {
     .app {
         margin: 0;
         padding: 2rem;
+        margin-bottom: 1rem;
     }
     .app-body-content {
         display: grid;
@@ -659,7 +660,7 @@ img {
         .appearance,
         .powerstats
     {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
 }
 
