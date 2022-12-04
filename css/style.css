@@ -361,14 +361,15 @@ img {
 @media (max-width: 576px){
     .main-wrapper {
         max-width: 540px;
+        margin: 0 auto;
     }
     .app {
 /*
         margin: 1rem;
         padding: 2rem;
 */
-        margin: 0;
-        padding: 2rem;
+        margin: 0 auto;
+        padding: 0;
     }
     .app-body-content {
         grid-row-gap: 5rem;
@@ -431,6 +432,8 @@ img {
 @media (max-width: 320px) {
     .main-wrapper {
         width: 100%;
+        margin: 0 auto;
+        
     }
     .app {
 /*
