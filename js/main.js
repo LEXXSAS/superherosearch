@@ -2,6 +2,8 @@ const allTabsBody = document.querySelectorAll('.tab-body-single');
 const allTabsHead = document.querySelectorAll('.tab-head-single');
 const searchForm = document.querySelector('.app-header-search');
 let searchList = document.getElementById('search-list');
+let textHeroName = document.querySelector('.heroName');
+let appBodyThumb = document.querySelector('.app-body-content-thumbnail');
 
 let activeTab = 1, allData;
 
@@ -65,6 +67,14 @@ const showSearchList = (data) => {
     });
 }
 
+searchForm.addEventListener('keydown', function(event) {
+  if (event.code == 'ENTER' && (searchForm.search.value.length > 1)) {
+        fetchAllSuperHero(searchForm.search.value);
+    } else {
+        searchList.innerHTML = "";
+    }
+});
+
 searchForm.search.addEventListener('keyup', () => {
     if(searchForm.search.value.length > 1) {
         fetchAllSuperHero(searchForm.search.value);
@@ -85,8 +95,15 @@ searchList.addEventListener('click', (event) => {
 const showSuperheroDetails = (data) => {
 //    console.log(data);
     document.querySelector('.app-body-content-thumbnail').innerHTML = `<img src = "${data[0].image.url}">`;
-    
-document.querySelector('.name').textContent = data[0].name;
+    let hName = data[0].name;
+  
+//    console.log(textHeroName.innerText)
+//    console.log(hName)
+let div = document.createElement('div');
+div.className = "newHeroName";
+div.innerHTML = hName;
+appBodyThumb.append(div);
+
 document.querySelector('.powerstats').innerHTML = `
                                <li>
                                    <div>
