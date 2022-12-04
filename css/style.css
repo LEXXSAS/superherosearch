@@ -33,7 +33,7 @@ body {
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    justify-content: stretch;
+/*     justify-content: stretch; */
 }
 .app-search-box {
     position: relative;
