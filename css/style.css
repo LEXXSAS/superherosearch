@@ -35,6 +35,10 @@ body {
     align-items: center;
     justify-content: stretch;
 }
+.app-search-box {
+    position: relative;
+    width: 100%;
+}
 button, input {
     font-family: inherit;
     font-size: 1.8rem;
@@ -72,6 +76,7 @@ img {
     border-radius: 3rem;
     padding: 1rem 2rem;
     position: relative;
+    justify-content: space-between;
 }
 .app-header-search .form-control {
     min-width: 420px;
@@ -346,6 +351,7 @@ img {
     }
     .app-header-search .search-btn {
         padding-left: 2rem;
+        justify-content: space-between;
     }
     .app-body-tabs-body {
         margin-right: 3rem;
@@ -372,6 +378,7 @@ img {
     }
     .app-header-search {
         display: flex;
+        justify-content: space-between;
 /*        width: 100%;*/
     }
     .app-header-search .form-control {
