@@ -359,6 +359,9 @@ img {
 }
 
 @media (max-width: 576px){
+    body {
+        overflow: hidden;
+    }
     .main-wrapper {
         max-width: 540px;
         margin: 0 auto;
@@ -430,6 +433,9 @@ img {
 }
 
 @media (max-width: 320px) {
+        body {
+        overflow: hidden;
+        }
     .main-wrapper {
         width: 100%;
         margin: 0 auto;
