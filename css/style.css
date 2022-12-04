@@ -32,7 +32,7 @@ body {
     font-family: var(--poppins-font);
     display: flex;
     -ms-align-items: center;
-    align-items: center;
+/*    align-items: center;*/
     justify-content: stretch;
 }
 
@@ -540,10 +540,11 @@ img {
     html {
         overflow: hidden;
     }
-    
+
     img {
         display: block;
-        width: 60%;
+/*        width: 60%;*/
+        width: 90%;
         margin: 0 auto;
     }
     
